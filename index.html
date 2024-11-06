@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="home">
+      <div id="nav">Genio-do</div>
+      <button class="btn"><a target="_blank" href="https://github.com/radumarias/genie-do">View on Github</a></button>
+    </div>
+
+    <div class="container">
+        <div class="giphy">
+            <img src="robotic.gif" alt="">
+        </div>
+     <div class="info">
+        <div class="heading">Motivation</div>
+        <div class="content">
+          <li>
+            The idea is to relieve developers of the
+            <span class="highlight">burden of managing the cluster</span> and
+            offer a REST API to interact, similar to tools like Airflow but
+            without Python-specific constraints.
+          </li>
+          <li>
+            In the future, <span class="highlight">genie-do</span> will support
+            libraries in various languages, enabling custom local actions similar
+            to GitHub Actions, where the community can build and contribute their
+            own actions.
+          </li>
+        
+          <li>
+            This platform aims to bring the functionality of GitHub Actions + AWS
+            Lambda + Apache Spark together.
+          </li>
+          <li>
+            <span class="highlight">Genie-do</span> is designed as a distributed
+            executor in Kubernetes, orchestrated with Apache Airflow, and is
+            deployable on any cloud provider or on-premises environment. If you
+            can represent your job as a Docker image,
+            <span class="highlight"
+              >we will run it, retry it, distribute it, and much more</span
+            >. You’ll also have access to Kafka, S3, Apache Spark & Flink,
+            PostgreSQL, NoSQL, and other essential technologies.
+          </li>
+        
+          <li>
+            Supporting gRPC services and REST API management, with libraries in
+            multiple languages, <span class="highlight">genie-do</span> makes it
+            easy for you to run and manage your code effortlessly.
+          </li>
+        </div>
+     </div>
+    </div>
+
+    <div class="container2">
+      <div class="information">
+        <div class="heading">Features</div>
+        <div class="content">
+            <ul class="features-list">
+                <li>Retries, failure tolerance, recovery, resilience, suspendable jobs</li>
+                <li>Sequential and parallel execution</li>
+                <li>Jobs graph</li>
+                <li>Job groups</li>
+                <li>Replicated jobs</li>
+                <li>Inter-process communication with dbus, zbus, gRPC, Apache Arrow Flight, Spark, Flink</li>
+                <li>Persistent job states in PostgreSQL and NoSQL solutions</li>
+                <li>Access file storage like S3</li>
+                <li>Concurrent execution and exclusive job execution</li>
+                <li>Remote scheduling, manual, automatic, cron</li>
+                <li>Can execute any code which can be represented as a container image</li>
+            </ul>
+        </div>
+      </div>
+      <div class="features">
+        <img src="features.gif" alt="">
+      </div>
+    </div>
+
+    <div class="stack-heading">Stack</div>
+    <div class="stack-container">
+      <div class="stack-item" title="Kubernetes: Containerization tool">
+          <img src="icons/Kubernetes.png" alt="Kubernetes" />
+      </div>
+      <div class="stack-item" title="Apache Airflow: Workflow orchestration tool">
+          <img src="icons/airflow.jpeg" alt="Apache Airflow" />
+      </div>
+      <div class="stack-item" title="Apache Kafka: Event bus for inter-service communication">
+          <img src="icons/kafka.png" alt="Apache Kafka" />
+      </div>
+      <div class="stack-item" title="Apache Pulsar: Event bus for inter-service communication">
+          <img src="icons/pulsar.svg" alt="Apache Pulsar" />
+      </div>
+      <div class="stack-item" title="Apache Spark: Data engineering and machine learning execution">
+          <img src="icons/spark.png" alt="Apache Spark" />
+      </div>
+      <div class="stack-item" title="Apache Flink: Real-time event processing">
+          <img src="icons/flink.jpeg" alt="Apache Flink" />
+      </div>
+      <div class="stack-item" title="Amazon S3: Scalable cloud storage service">
+          <img src="icons/amazon.png" alt="Amazon S3" />
+      </div>
+      <div class="stack-item" title="Grafana: Monitoring and observability tool">
+          <img src="icons/Grafana.jpeg" alt="Grafana" />
+      </div>
+      <div class="stack-item" title="Prometheus: Monitoring and alerting toolkit">
+          <img src="icons/Prometheus.png" alt="Prometheus" />
+      </div>
+  </div>
+  
+  
+  </body>
+</html>
