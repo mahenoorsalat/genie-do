@@ -126,9 +126,12 @@ body {
 }
 
 .stack-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    padding: 0 45px;
     margin: 50px 0;
+    justify-items: center;
 }
 
 .stack-item {
@@ -143,12 +146,24 @@ body {
     height: 80px;
 }
 
+.stack-item .name {
+    display: block;
+    font-size: 14px;
+    color: #6200ea;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.stack-item a{
+    color: #3700b3;
+    text-decoration: none;
+}
 .stack-item:hover {
     transform: scale(1.1);
 }
 
 .stack-item:hover::after {
-    content: attr(title);
+    content: attr(data-title);
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -159,6 +174,7 @@ body {
     border-radius: 5px;
     white-space: nowrap;
     font-size: 14px;
+    font-weight: normal;
 }
 
 .stack-heading {
@@ -178,10 +194,7 @@ body {
         flex-direction: column;
     }
 
-    .stack-container{
-        display: flex;
-        flex-direction: column;
-    }
+
 
     .container2{
         margin: 0px;
@@ -199,8 +212,5 @@ body {
         margin: 32px
     }
 
-    .stack-item::after{
-        font-size: 9px;
-    }
-    
+
 }
